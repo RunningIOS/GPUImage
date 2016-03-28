@@ -30,6 +30,9 @@
  */
 @property(readwrite, nonatomic) BOOL shouldRepeat;
 
+@property(readwrite, nonatomic) BOOL playSound;
+
+
 /** This specifies the progress of the process on a scale from 0 to 1.0. A value of 0 means the process has not yet begun, A value of 1.0 means the conversaion is complete.
     This property is not key-value observable.
  */
