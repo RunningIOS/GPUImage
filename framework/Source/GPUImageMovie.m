@@ -924,5 +924,11 @@ static CVReturn renderCallback(CVDisplayLinkRef displayLink,
     theAudioPlayer = [[AVPlayer alloc] initWithURL:self.url];
 }
 
+- (void)setVolume:(float)volume {
+    _volume = volume;
+    
+    theAudioPlayer.volume = volume;
+}
+
 
 @end
