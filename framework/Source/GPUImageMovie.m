@@ -930,5 +930,11 @@ static CVReturn renderCallback(CVDisplayLinkRef displayLink,
     theAudioPlayer.volume = volume;
 }
 
+- (void)setMuted:(BOOL)muted {
+    _muted = muted;
+    
+    theAudioPlayer.muted = _muted;
+}
+
 
 @end
